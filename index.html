@@ -79,7 +79,6 @@ function loupe(e,p){
  lx.moveTo(120,96);lx.lineTo(120,108);lx.moveTo(120,132);lx.lineTo(120,144);lx.moveTo(96,120);lx.lineTo(108,120);lx.moveTo(132,120);lx.lineTo(144,120);lx.stroke();
  lx.beginPath();lx.arc(120,120,Math.max(3,LW/2*k),0,7);lx.stroke();
  let cx=t.clientX,cy=t.clientY-100;
- if(cy<LS/2+8){cy=t.clientY;cx+=(t.clientX<innerWidth/2?1:-1)*90}
  cx=Math.min(innerWidth-LS/2-4,Math.max(LS/2+4,cx));cy=Math.max(LS/2+4,cy);
  lo.style.left=(cx-LS/2)+'px';lo.style.top=(cy-LS/2)+'px';lo.style.display='block'}
 function clear(){dx.clearRect(0,0,S,S);pts=[];strokes=[];redoS.length=0;len=0;hint('');upd()}
